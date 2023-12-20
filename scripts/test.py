@@ -54,7 +54,6 @@ def main():
     )
 
     fix, ax = plt.subplots()
-    
 
     back_tire = plt.Rectangle(
         xy=back_tire_xy,
@@ -79,16 +78,13 @@ def main():
         [back_tire_xy[1] + tire_height / 2.0, front_tire_xy[1] + tire_height / 2.0],
         "r",
     )
-    
+
     plt.xlim(-10.0, 10.0)
     plt.ylim(-10.0, 10.0)
     plt.axis("equal")
 
     plt.show()
 
-
-def update(frame):
-    
 
 if __name__ == "__main__":
     main()
